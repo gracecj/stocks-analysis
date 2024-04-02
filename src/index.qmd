@@ -1,7 +1,26 @@
 ---
-title: "Home"
+title: "Stocks Report"
+format:
+  html:
+    code-fold: true
+jupyter: python3
 ---
 
-# Hello world!
+```{python}
+# Import necessary libraries
+import yfinance as yf
 
-Welcome to my web site!
+# Define function to get stock prices
+def get_stock_price(symbol):
+    stock = yf.Ticker(symbol)
+    price = stock.history(period='1d')['Close'].iloc[0]
+    return price
+
+# List of stock symbols
+stock_symbols = ['AAPL', 'GOOGL', 'MSFT', 'AMZN']
+
+# Get and display stock prices
+for symbol in stock_symbols:
+    price = get_stock_price(symbol)
+    print(f'{symbol}: ${price:.2f}')
+```
