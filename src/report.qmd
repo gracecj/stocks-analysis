@@ -1,10 +1,12 @@
-# Stock Prices
-
-## Introduction
+---
+title: "Report"
+format:
+  html:
+    code-fold: true
+jupyter: python3
+---
 
 This QMD file demonstrates how to retrieve stock prices using Python.
-
-## Code
 
 ```{python}
 # Import necessary libraries

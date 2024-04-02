@@ -1,5 +1,5 @@
 ---
-title: "Quarto Basics"
+title: "Demo"
 format:
   html:
     code-fold: true

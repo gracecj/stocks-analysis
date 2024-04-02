@@ -20,5 +20,4 @@ format:
     toc: true
     link-external-newwindow: true
     theme: lux
-    css: styles.css
     

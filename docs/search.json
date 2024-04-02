@@ -2,8 +2,36 @@
   {
     "objectID": "demo.html",
     "href": "demo.html",
-    "title": "Quarto Basics",
+    "title": "Demo",
     "section": "",
     "text": "For a demonstration of a line plot on a polar axis, see Figure 1.\n\n\nCode\nimport numpy as np\nimport matplotlib.pyplot as plt\n\nr = np.arange(0, 2, 0.01)\ntheta = 4 * np.pi * r\nfig, ax = plt.subplots(\n  subplot_kw = {'projection': 'polar'} \n)\nax.plot(theta, r)\nax.set_rticks([0.5, 1, 1.5, 2])\nax.grid(True)\nplt.show()\n\n\n\n\n\n\n\n\nFigure 1: A line plot on a polar axis"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Home",
+    "section": "",
+    "text": "Hello world!\nWelcome to my web site!"
+  },
+  {
+    "objectID": "report.html",
+    "href": "report.html",
+    "title": "Report",
+    "section": "",
+    "text": "This QMD file demonstrates how to retrieve stock prices using Python.\n\n\nCode\n# Import necessary libraries\nimport yfinance as yf\n\n# Define function to get stock prices\ndef get_stock_price(symbol):\n    stock = yf.Ticker(symbol)\n    price = stock.history(period='1d')['Close'].iloc[0]\n    return price\n\n# List of stock symbols\nstock_symbols = ['AAPL', 'GOOGL', 'MSFT', 'AMZN']\n\n# Get and display stock prices\nfor symbol in stock_symbols:\n    price = get_stock_price(symbol)\n    print(f'{symbol}: ${price:.2f}')\n\n\nAAPL: $168.84\nGOOGL: $154.56\nMSFT: $421.44\nAMZN: $180.69"
+  },
+  {
+    "objectID": "report.html#introduction",
+    "href": "report.html#introduction",
+    "title": "Stock Prices",
+    "section": "",
+    "text": "This QMD file demonstrates how to retrieve stock prices using Python.\n\n# Import necessary libraries\nimport yfinance as yf\n\n# Define function to get stock prices\ndef get_stock_price(symbol):\n    stock = yf.Ticker(symbol)\n    price = stock.history(period='1d')['Close'].iloc[0]\n    return price\n\n# List of stock symbols\nstock_symbols = ['AAPL', 'GOOGL', 'MSFT', 'AMZN']\n\n# Get and display stock prices\nfor symbol in stock_symbols:\n    price = get_stock_price(symbol)\n    print(f'{symbol}: ${price:.2f}')\n\nAAPL: $168.84\nGOOGL: $154.56\nMSFT: $421.44\nAMZN: $180.69"
+  },
+  {
+    "objectID": "report.html#code",
+    "href": "report.html#code",
+    "title": "Stock Prices",
+    "section": "Code",
+    "text": "Code\n\n# Import necessary libraries\nimport yfinance as yf\n\n# Define function to get stock prices\ndef get_stock_price(symbol):\n    stock = yf.Ticker(symbol)\n    price = stock.history(period='1d')['Close'].iloc[0]\n    return price\n\n# List of stock symbols\nstock_symbols = ['AAPL', 'GOOGL', 'MSFT', 'AMZN']\n\n# Get and display stock prices\nfor symbol in stock_symbols:\n    price = get_stock_price(symbol)\n    print(f'{symbol}: ${price:.2f}')\n\nAAPL: $168.84\nGOOGL: $154.56\nMSFT: $421.44\nAMZN: $180.69"
   }
 ]
