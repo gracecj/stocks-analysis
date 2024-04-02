@@ -10,6 +10,8 @@ website:
         text: Home
       - href: demo.qmd
         text: Demo
+      - href: report.qmd
+        text: Report
 
 format:
   html:
