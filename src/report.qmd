@@ -1,3 +1,11 @@
+---
+title: "Stock Report"
+format:
+  html:
+    code-fold: true
+jupyter: python3
+---
+
 # Stock Prices
 
 ## Introduction
@@ -6,7 +14,7 @@ This QMD file demonstrates how to retrieve stock prices using Python.
 
 ## Code
 
-```python
+```{python}
 # Import necessary libraries
 import yfinance as yf
 
@@ -23,3 +31,4 @@ stock_symbols = ['AAPL', 'GOOGL', 'MSFT', 'AMZN']
 for symbol in stock_symbols:
     price = get_stock_price(symbol)
     print(f'{symbol}: ${price:.2f}')
+```
