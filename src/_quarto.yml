@@ -1,0 +1,22 @@
+project:
+  type: website
+  output-dir: ../docs
+
+website:
+  title: "Stocks Analysis"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: demo.qmd
+        text: Demo
+
+format:
+  html:
+    grid:
+      body-width: 950px
+    toc: true
+    link-external-newwindow: true
+    theme: lux
+    css: styles.css
+    
