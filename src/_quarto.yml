@@ -8,7 +8,7 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - href: Demo.qmd
+      - href: demo.qmd
         text: Demo
       - href: report.qmd
         text: Report

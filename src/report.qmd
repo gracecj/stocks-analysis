@@ -1,11 +1,3 @@
----
-title: "Stock Report"
-format:
-  html:
-    code-fold: true
-jupyter: python3
----
-
 # Stock Prices
 
 ## Introduction
@@ -21,7 +13,7 @@ import yfinance as yf
 # Define function to get stock prices
 def get_stock_price(symbol):
     stock = yf.Ticker(symbol)
-    price = stock.history(period='1d')['Close'][0]
+    price = stock.history(period='1d')['Close'].iloc[0]
     return price
 
 # List of stock symbols

@@ -1,30 +1,9 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Stocks Analysis",
+    "objectID": "demo.html",
+    "href": "demo.html",
+    "title": "Quarto Basics",
     "section": "",
-    "text": "Hello world!\nWelcome to my web site!"
-  },
-  {
-    "objectID": "report.html",
-    "href": "report.html",
-    "title": "Stock Prices",
-    "section": "",
-    "text": "This QMD file demonstrates how to retrieve stock prices using Python.\n\n\n\n```python # Import necessary libraries import yfinance as yf"
-  },
-  {
-    "objectID": "report.html#introduction",
-    "href": "report.html#introduction",
-    "title": "Stock Prices",
-    "section": "",
-    "text": "This QMD file demonstrates how to retrieve stock prices using Python."
-  },
-  {
-    "objectID": "report.html#code",
-    "href": "report.html#code",
-    "title": "Stock Prices",
-    "section": "",
-    "text": "```python # Import necessary libraries import yfinance as yf"
+    "text": "For a demonstration of a line plot on a polar axis, see Figure 1.\n\n\nCode\nimport numpy as np\nimport matplotlib.pyplot as plt\n\nr = np.arange(0, 2, 0.01)\ntheta = 4 * np.pi * r\nfig, ax = plt.subplots(\n  subplot_kw = {'projection': 'polar'} \n)\nax.plot(theta, r)\nax.set_rticks([0.5, 1, 1.5, 2])\nax.grid(True)\nplt.show()\n\n\n\n\n\n\n\n\nFigure 1: A line plot on a polar axis"
   }
 ]
