@@ -5,5 +5,26 @@
     "title": "Stocks Analysis",
     "section": "",
     "text": "Hello world!\nWelcome to my web site!"
+  },
+  {
+    "objectID": "report.html",
+    "href": "report.html",
+    "title": "Stock Prices",
+    "section": "",
+    "text": "This QMD file demonstrates how to retrieve stock prices using Python.\n\n\n\n```python # Import necessary libraries import yfinance as yf"
+  },
+  {
+    "objectID": "report.html#introduction",
+    "href": "report.html#introduction",
+    "title": "Stock Prices",
+    "section": "",
+    "text": "This QMD file demonstrates how to retrieve stock prices using Python."
+  },
+  {
+    "objectID": "report.html#code",
+    "href": "report.html#code",
+    "title": "Stock Prices",
+    "section": "",
+    "text": "```python # Import necessary libraries import yfinance as yf"
   }
 ]
