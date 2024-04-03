@@ -30,16 +30,16 @@ stocks = []
 companies = ['Adidas', 'Birkenstock', 'Dr. Martens', 'Logitech', 'L\'Oreal','Nintendo', 'Samsung', 'Shiseido', 'Toyota', 'Unilever']
 tickers = ['ADDYY', 'BIRK', 'DOCMF', 'LOGI', 'LRLCY', 'NTDOY', '005930.KS', 'SSDOY', 'TM', 'UL']
 information = [
-    "Information about Adidas",
-    "Information about Birkenstock",
-    "Information about Dr. Martens",
-    "Information about Logitech",
-    "Information about L'Oreal",
-    "Information about Nintendo",
-    "Information about Samsung",
-    "Information about Shiseido",
-    "Information about Toyota",
-    "Information about Unilever"
+    "Germany\n\nSportswear, footwear, sports equipment",
+    "Germany\n\nFootwear, especially sandals",
+    "United Kingdom\n\nFootwear, particularly boots and shoes",
+    "Switzerland\n\nComputer peripherals and accessories, including mice, keyboards, and webcams",
+    "France\n\nCosmetics, beauty products, skincare, haircare, and fragrances",
+    "Japan\n\nVideo game consoles, handheld consoles, video games",
+    "South Korea\n\nElectronics, including smartphones, televisions, home appliances, and semiconductors",
+    "Japan\n\nCosmetics, skincare, fragrances, and personal care products",
+    "Japan\n\nAutomobiles, hybrid vehicles, trucks, buses",
+    "United Kingdom\n\nConsumer goods including food, beverages, cleaning agents, and personal care products"
 ]
 
 for company, ticker_symbol, info in zip(companies, tickers, information):
