@@ -57,16 +57,20 @@ details = stocks[0]['information']
 price = stocks[0]['current_price']
 ```
 
-::: {.g-col-6}
+::: {.g-col-4}
 ```{python}
-display(Markdown(f"**{name} ({symbol}**)\n\n{details}"))
+display(Markdown(f"**{name} ({symbol})**"))
 ```
 :::
 
-::: {.g-col-6}
+::: {.g-col-4}
 ```{python}
-display(Markdown(f"**${price}**"))
+display(Markdown(f"**${price}**\n\n{details}"))
 ```
+:::
+
+::: {.g-col-4}
+![](./images/adidas.jpeg)
 :::
 
 ```{python}
