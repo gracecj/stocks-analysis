@@ -9,10 +9,9 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Install Quarto
-        run: npm install -g git+https://github.com/quarto-dev/quarto-cli.git
+      - name: Set up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
 
-      
       - name: Update and re-execute index.qmd
         run: quarto exec index.qmd --to index.qmd
       
