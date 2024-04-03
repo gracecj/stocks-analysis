@@ -1,11 +1,9 @@
 name: Update Quarto Project
 
-on:
-  schedule:
-    - cron: '50 1 * * *'  # Run the workflow every day at 1:50 AM UTC
+on: workflow_dispatch
 
 jobs:
-  test-schedule:
+  manual_job:
     runs-on: ubuntu-latest
     steps:
       - name: Every time
