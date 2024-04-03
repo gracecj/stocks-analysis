@@ -9,6 +9,21 @@ jupyter: python3
 This tool was created by Grace Johnson to access current stock prices using Yahoo Finance.
 :::
 ```{python}
+from datetime import datetime, timezone
+import pytz
+def current_datetime_in_est():
+    # Get the current time in UTC
+    utc_now = datetime.now(timezone.utc)
+    
+    # Convert UTC time to EST timezone
+    est_timezone = pytz.timezone('US/Eastern')
+    est_now = utc_now.astimezone(est_timezone)
+    
+    return est_now.strftime('%Y-%m-%d %I:%M:%S %p %Z')
+
+print("Current date and time in EST:", current_datetime_in_est())
+```
+```{python}
 import helpers
 from IPython.display import display, Markdown
 
