@@ -25,6 +25,7 @@ jobs:
       - name: Re-render site
         run: |
           cd stocks-analysis
+          cd src
           quarto render
 
       - name: Push new version
