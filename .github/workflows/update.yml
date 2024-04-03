@@ -12,8 +12,8 @@ jobs:
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
 
-      - name: Update and re-execute index.qmd
-        run: quarto exec index.qmd --to index.qmd
+      - name: Render Quarto Project
+        uses: quarto-dev/quarto-actions/render@v2
       
       - name: Push changes
         uses: ad-m/github-push-action@master
