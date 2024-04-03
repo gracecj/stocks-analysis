@@ -18,5 +18,4 @@ jobs:
       - name: Render Quarto Project
         uses: quarto-dev/quarto-actions/render@v2
         with:
-          to: index.qmd # If set, it will be equivalent to `quarto render --to html`
-          path: ./src # By default, the current working dir is used i.e `quarto render .`
+          path: ./src/index.qmd # By default, the current working dir is used i.e `quarto render .`
