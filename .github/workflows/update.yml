@@ -18,6 +18,8 @@ jobs:
 
       - name: Clone Project
         run: |
+          git config user.email "action@github.com"
+          git config user.name "GitHub Action"
           git clone "https://github.com/gracecj/stocks-analysis.git"
 
       - name: Re-render site
@@ -29,9 +31,7 @@ jobs:
       - name: Push new version
         run: |
           cd stocks-analysis
-          git config user.email "action@github.com"
-          git config user.name "GitHub Action"
-          git remote set-url origin https://$PAT_TOKEN@github.com/gracecj/stocks-analysis.git
+          git remote set-url origin https://x-access-token:${{ secrets.PAT_TOKEN }}@github.com/gracecj/stocks-analysis.git
           git add .
           git commit -m "Stocks Update"
           git push
