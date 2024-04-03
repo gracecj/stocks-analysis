@@ -2,8 +2,8 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Stocks Report",
+    "title": "Stock Report",
     "section": "",
-    "text": "Code\n# Import necessary libraries\nimport yfinance as yf\n\n# Define function to get stock prices\ndef get_stock_price(symbol):\n    stock = yf.Ticker(symbol)\n    price = stock.history(period='1d')['Close'].iloc[0]\n    return price\n\n# List of stock symbols\nstock_symbols = ['AAPL', 'GOOGL', 'MSFT', 'AMZN']\n\n# Get and display stock prices\nfor symbol in stock_symbols:\n    price = get_stock_price(symbol)\n    print(f'{symbol}: ${price:.2f}')\n\n\nAAPL: $168.84\nGOOGL: $154.56\nMSFT: $421.44\nAMZN: $180.69"
+    "text": "Note\n\n\n\nThis tool was created by Grace Johnson to access current stock prices using Yahoo Finance.\n\n\n\n\n\n\nAdidas (ADDYY)\nInformation about Adidas\n\n\n\n\n\n\n$108.90\n\n\n\n\n\n\nBirkenstock (BIRK)\nInformation about Birkenstock\n\n\n\n\n\n\n$45.19\n\n\n\n\n\n\nDr. Martens (DOCMF)\nInformation about Dr. Martens\n\n\n\n\n\n\n$1.16\n\n\n\n\n\n\nLogitech (LOGI)\nInformation about Logitech\n\n\n\n\n\n\n$88.70\n\n\n\n\n\n\nL’Oreal (LRLCY)\nInformation about L’Oreal\n\n\n\n\n\n\n$93.06\n\n\n\n\n\n\nNintendo (NTDOY)\nInformation about Nintendo\n\n\n\n\n\n\n$13.33\n\n\n\n\n\n\nSamsung (005930.KS)\nInformation about Samsung\n\n\n\n\n\n\n$62.31\n\n\n\n\n\n\nShiseido (SSDOY)\nInformation about Shiseido\n\n\n\n\n\n\n$27.28\n\n\n\n\n\n\nToyota (TM)\nInformation about Toyota\n\n\n\n\n\n\n$239.89\n\n\n\n\n\n\nUnilever (UL)\nInformation about Unilever\n\n\n\n\n\n\n$49.35"
   }
 ]

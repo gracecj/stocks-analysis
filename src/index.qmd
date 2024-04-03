@@ -1,26 +1,227 @@
 ---
-title: "Stocks Report"
-format:
-  html:
-    code-fold: true
+title: "Stock Report"
+execute:
+  echo: false
+  enabled: true
 jupyter: python3
 ---
+::: {.callout-note}
+This tool was created by Grace Johnson to access current stock prices using Yahoo Finance.
+:::
+```{python}
+import helpers
+from IPython.display import display, Markdown
+
+stocks = []
+companies = ['Adidas', 'Birkenstock', 'Dr. Martens', 'Logitech', 'L\'Oreal','Nintendo', 'Samsung', 'Shiseido', 'Toyota', 'Unilever']
+tickers = ['ADDYY', 'BIRK', 'DOCMF', 'LOGI', 'LRLCY', 'NTDOY', '005930.KS', 'SSDOY', 'TM', 'UL']
+information = [
+    "Information about Adidas",
+    "Information about Birkenstock",
+    "Information about Dr. Martens",
+    "Information about Logitech",
+    "Information about L'Oreal",
+    "Information about Nintendo",
+    "Information about Samsung",
+    "Information about Shiseido",
+    "Information about Toyota",
+    "Information about Unilever"
+]
+
+for company, ticker_symbol, info in zip(companies, tickers, information):
+    ticker = helpers.get_stock(ticker_symbol)
+    data = helpers.get_data(ticker)
+    current_price = helpers.get_price(data, ticker)
+    stock = helpers.create_stock(company, ticker_symbol, info, current_price)
+    stocks.append(stock)
+```
+::: {.grid}
+```{python}
+name = stocks[0]['name']
+symbol = stocks[0]['ticker']
+details = stocks[0]['information']
+price = stocks[0]['current_price']
+```
+
+::: {.g-col-6}
+```{python}
+display(Markdown(f"**{name} ({symbol}**)\n\n{details}"))
+```
+:::
+
+::: {.g-col-6}
+```{python}
+display(Markdown(f"**${price}**"))
+```
+:::
 
 ```{python}
-# Import necessary libraries
-import yfinance as yf
-
-# Define function to get stock prices
-def get_stock_price(symbol):
-    stock = yf.Ticker(symbol)
-    price = stock.history(period='1d')['Close'].iloc[0]
-    return price
-
-# List of stock symbols
-stock_symbols = ['AAPL', 'GOOGL', 'MSFT', 'AMZN']
-
-# Get and display stock prices
-for symbol in stock_symbols:
-    price = get_stock_price(symbol)
-    print(f'{symbol}: ${price:.2f}')
+name = stocks[1]['name']
+symbol = stocks[1]['ticker']
+details = stocks[1]['information']
+price = stocks[1]['current_price']
 ```
+
+::: {.g-col-6}
+```{python}
+display(Markdown(f"**{name} ({symbol}**)\n\n{details}"))
+```
+:::
+
+::: {.g-col-6}
+```{python}
+display(Markdown(f"**${price}**"))
+```
+:::
+
+```{python}
+name = stocks[2]['name']
+symbol = stocks[2]['ticker']
+details = stocks[2]['information']
+price = stocks[2]['current_price']
+```
+
+::: {.g-col-6}
+```{python}
+display(Markdown(f"**{name} ({symbol}**)\n\n{details}"))
+```
+:::
+
+::: {.g-col-6}
+```{python}
+display(Markdown(f"**${price}**"))
+```
+:::
+
+```{python}
+name = stocks[3]['name']
+symbol = stocks[3]['ticker']
+details = stocks[3]['information']
+price = stocks[3]['current_price']
+```
+
+::: {.g-col-6}
+```{python}
+display(Markdown(f"**{name} ({symbol}**)\n\n{details}"))
+```
+:::
+
+::: {.g-col-6}
+```{python}
+display(Markdown(f"**${price}**"))
+```
+:::
+
+```{python}
+name = stocks[4]['name']
+symbol = stocks[4]['ticker']
+details = stocks[4]['information']
+price = stocks[4]['current_price']
+```
+
+::: {.g-col-6}
+```{python}
+display(Markdown(f"**{name} ({symbol}**)\n\n{details}"))
+```
+:::
+
+::: {.g-col-6}
+```{python}
+display(Markdown(f"**${price}**"))
+```
+:::
+
+```{python}
+name = stocks[5]['name']
+symbol = stocks[5]['ticker']
+details = stocks[5]['information']
+price = stocks[5]['current_price']
+```
+
+::: {.g-col-6}
+```{python}
+display(Markdown(f"**{name} ({symbol}**)\n\n{details}"))
+```
+:::
+
+::: {.g-col-6}
+```{python}
+display(Markdown(f"**${price}**"))
+```
+:::
+
+```{python}
+name = stocks[6]['name']
+symbol = stocks[6]['ticker']
+details = stocks[6]['information']
+price = stocks[6]['current_price']
+```
+
+::: {.g-col-6}
+```{python}
+display(Markdown(f"**{name} ({symbol}**)\n\n{details}"))
+```
+:::
+
+::: {.g-col-6}
+```{python}
+display(Markdown(f"**${price}**"))
+```
+:::
+
+```{python}
+name = stocks[7]['name']
+symbol = stocks[7]['ticker']
+details = stocks[7]['information']
+price = stocks[7]['current_price']
+```
+
+::: {.g-col-6}
+```{python}
+display(Markdown(f"**{name} ({symbol}**)\n\n{details}"))
+```
+:::
+
+::: {.g-col-6}
+```{python}
+display(Markdown(f"**${price}**"))
+```
+:::
+```{python}
+name = stocks[8]['name']
+symbol = stocks[8]['ticker']
+details = stocks[8]['information']
+price = stocks[8]['current_price']
+```
+
+::: {.g-col-6}
+```{python}
+display(Markdown(f"**{name} ({symbol}**)\n\n{details}"))
+```
+:::
+
+::: {.g-col-6}
+```{python}
+display(Markdown(f"**${price}**"))
+```
+:::
+
+```{python}
+name = stocks[9]['name']
+symbol = stocks[9]['ticker']
+details = stocks[9]['information']
+price = stocks[9]['current_price']
+```
+
+::: {.g-col-6}
+```{python}
+display(Markdown(f"**{name} ({symbol}**)\n\n{details}"))
+```
+:::
+
+::: {.g-col-6}
+```{python}
+display(Markdown(f"**${price}**"))
+```
+:::
+:::
