@@ -18,8 +18,8 @@ jobs:
 
       - name: Clone Project
         run: |
-          git config user.email "action@github.com"
-          git config user.name "GitHub Action"
+          git config --global user.email "action@github.com"
+          git config --global user.name "GitHub Action"
           git clone "https://github.com/gracecj/stocks-analysis.git"
 
       - name: Re-render site
