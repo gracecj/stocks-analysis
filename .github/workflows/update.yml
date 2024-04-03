@@ -9,17 +9,13 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: XDTesting Print Directory Structure
-        uses: FiorelaCiroku/XDTesting-Print-Directory-Structure@v1.0.2
-
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
 
       - name: Setup Python
         uses: actions/setup-python@v3
-      - run: pip install jupyter
 
       - name: Render Quarto Project
         uses: quarto-dev/quarto-actions/render@v2
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          path: /src
