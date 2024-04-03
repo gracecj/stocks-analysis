@@ -57,15 +57,9 @@ details = stocks[0]['information']
 price = stocks[0]['current_price']
 ```
 
-::: {.g-col-4}
+::: {.g-col-4 .g-start-3}
 ```{python}
-display(Markdown(f"**{name} ({symbol})**"))
-```
-:::
-
-::: {.g-col-4}
-```{python}
-display(Markdown(f"**${price}**\n\n{details}"))
+display(Markdown(f"**{name} ({symbol})**\n\n**${price}**\n\n{details}"))
 ```
 :::
 
@@ -80,16 +74,14 @@ details = stocks[1]['information']
 price = stocks[1]['current_price']
 ```
 
-::: {.g-col-6}
+::: {.g-col-4 .g-start-3}
 ```{python}
-display(Markdown(f"**{name} ({symbol}**)\n\n{details}"))
+display(Markdown(f"**{name} ({symbol})**\n\n**${price}**\n\n{details}"))
 ```
 :::
 
-::: {.g-col-6}
-```{python}
-display(Markdown(f"**${price}**"))
-```
+::: {.g-col-4}
+![](./images/adidas.jpeg)
 :::
 
 ```{python}
@@ -99,16 +91,14 @@ details = stocks[2]['information']
 price = stocks[2]['current_price']
 ```
 
-::: {.g-col-6}
+::: {.g-col-4 .g-start-3}
 ```{python}
-display(Markdown(f"**{name} ({symbol}**)\n\n{details}"))
+display(Markdown(f"**{name} ({symbol})**\n\n**${price}**\n\n{details}"))
 ```
 :::
 
-::: {.g-col-6}
-```{python}
-display(Markdown(f"**${price}**"))
-```
+::: {.g-col-4}
+![](./images/adidas.jpeg)
 :::
 
 ```{python}
@@ -118,16 +108,14 @@ details = stocks[3]['information']
 price = stocks[3]['current_price']
 ```
 
-::: {.g-col-6}
+::: {.g-col-4 .g-start-3}
 ```{python}
-display(Markdown(f"**{name} ({symbol}**)\n\n{details}"))
+display(Markdown(f"**{name} ({symbol})**\n\n**${price}**\n\n{details}"))
 ```
 :::
 
-::: {.g-col-6}
-```{python}
-display(Markdown(f"**${price}**"))
-```
+::: {.g-col-4}
+![](./images/adidas.jpeg)
 :::
 
 ```{python}
@@ -137,16 +125,14 @@ details = stocks[4]['information']
 price = stocks[4]['current_price']
 ```
 
-::: {.g-col-6}
+::: {.g-col-4 .g-start-3}
 ```{python}
-display(Markdown(f"**{name} ({symbol}**)\n\n{details}"))
+display(Markdown(f"**{name} ({symbol})**\n\n**${price}**\n\n{details}"))
 ```
 :::
 
-::: {.g-col-6}
-```{python}
-display(Markdown(f"**${price}**"))
-```
+::: {.g-col-4}
+![](./images/adidas.jpeg)
 :::
 
 ```{python}
@@ -156,16 +142,14 @@ details = stocks[5]['information']
 price = stocks[5]['current_price']
 ```
 
-::: {.g-col-6}
+::: {.g-col-4 .g-start-3}
 ```{python}
-display(Markdown(f"**{name} ({symbol}**)\n\n{details}"))
+display(Markdown(f"**{name} ({symbol})**\n\n**${price}**\n\n{details}"))
 ```
 :::
 
-::: {.g-col-6}
-```{python}
-display(Markdown(f"**${price}**"))
-```
+::: {.g-col-4}
+![](./images/adidas.jpeg)
 :::
 
 ```{python}
@@ -175,16 +159,14 @@ details = stocks[6]['information']
 price = stocks[6]['current_price']
 ```
 
-::: {.g-col-6}
+::: {.g-col-4 .g-start-3}
 ```{python}
-display(Markdown(f"**{name} ({symbol}**)\n\n{details}"))
+display(Markdown(f"**{name} ({symbol})**\n\n**${price}**\n\n{details}"))
 ```
 :::
 
-::: {.g-col-6}
-```{python}
-display(Markdown(f"**${price}**"))
-```
+::: {.g-col-4}
+![](./images/adidas.jpeg)
 :::
 
 ```{python}
@@ -194,17 +176,16 @@ details = stocks[7]['information']
 price = stocks[7]['current_price']
 ```
 
-::: {.g-col-6}
+::: {.g-col-4 .g-start-3}
 ```{python}
-display(Markdown(f"**{name} ({symbol}**)\n\n{details}"))
+display(Markdown(f"**{name} ({symbol})**\n\n**${price}**\n\n{details}"))
 ```
 :::
 
-::: {.g-col-6}
-```{python}
-display(Markdown(f"**${price}**"))
-```
+::: {.g-col-4}
+![](./images/adidas.jpeg)
 :::
+
 ```{python}
 name = stocks[8]['name']
 symbol = stocks[8]['ticker']
@@ -212,16 +193,14 @@ details = stocks[8]['information']
 price = stocks[8]['current_price']
 ```
 
-::: {.g-col-6}
+::: {.g-col-4 .g-start-3}
 ```{python}
-display(Markdown(f"**{name} ({symbol}**)\n\n{details}"))
+display(Markdown(f"**{name} ({symbol})**\n\n**${price}**\n\n{details}"))
 ```
 :::
 
-::: {.g-col-6}
-```{python}
-display(Markdown(f"**${price}**"))
-```
+::: {.g-col-4}
+![](./images/adidas.jpeg)
 :::
 
 ```{python}
@@ -231,15 +210,14 @@ details = stocks[9]['information']
 price = stocks[9]['current_price']
 ```
 
-::: {.g-col-6}
+::: {.g-col-4 .g-start-3}
 ```{python}
-display(Markdown(f"**{name} ({symbol}**)\n\n{details}"))
+display(Markdown(f"**{name} ({symbol})**\n\n**${price}**\n\n{details}"))
 ```
 :::
 
-::: {.g-col-6}
-```{python}
-display(Markdown(f"**${price}**"))
-```
+::: {.g-col-4}
+![](./images/unilever1.jpeg)
 :::
+
 :::
