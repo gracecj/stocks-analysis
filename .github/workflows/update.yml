@@ -3,8 +3,19 @@ name: Update Quarto Project
 on: workflow_dispatch
 
 jobs:
-  manual_job:
+  update:
     runs-on: ubuntu-latest
     steps:
-      - name: Every time
-        run: echo "This step will always run"
+      - name: Checkout code
+        uses: actions/checkout@v2
+      
+      - name: Install Quarto
+        run: npm install -g @quartoknows/cli
+      
+      - name: Update and re-execute index.qmd
+        run: quarto exec index.qmd --to index.qmd
+      
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
