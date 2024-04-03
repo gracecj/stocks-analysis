@@ -2,7 +2,7 @@ name: Update Quarto Project
 
 on:
   schedule:
-    - cron: '41 1 * * *'  # Run the workflow every day at 1:37 AM UTC
+    - cron: '41 1 * * *'  # Run the workflow every day at 1:41 AM UTC
 
 jobs:
   update:
