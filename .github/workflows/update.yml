@@ -29,6 +29,8 @@ jobs:
       - name: Push new version
         run: |
           cd stocks-analysis
+          git config user.email "action@github.com"
+          git config user.name "GitHub Action"
           git remote set-url origin https://$PAT_TOKEN@github.com/gracecj/stocks-analysis.git
           git add .
           git commit -m "Stocks Update"
