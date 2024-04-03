@@ -16,7 +16,21 @@ jobs:
         uses: actions/setup-python@v3
       - run: pip install jupyter pytz yfinance
 
-      - name: Render Quarto Project
-        uses: quarto-dev/quarto-actions/render@v2
-        with:
-          path: ./src/index.qmd # By default, the current working dir is used i.e `quarto render .`
+      - name: Clone Project
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git clone "https://github.com/gracecj/stocks-analysis.git"
+
+      - name: Re-render site
+        run: |
+          cd stocks-analysis
+          quarto render
+
+      - name: Push new version
+        run: |
+          cd stocks-analysis
+          git remote set-url origin https://x-access-token:${{ secrets.SECRETS }}@github.com/gracecj/stocks-analysis.git
+          git add .
+          git commit -m "Stocks Update"
+          git push
