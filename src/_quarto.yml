@@ -2,10 +2,6 @@ project:
   type: website
   output-dir: ../docs
 
-website:
-  sidebar:
-    title: "{{< meta date >}}"
-
 format:
   html:
     theme: morph
