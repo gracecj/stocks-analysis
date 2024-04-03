@@ -15,6 +15,9 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v3
 
+      - name: List contents of src directory
+        run: ls -l ../src
+
       - name: Render Quarto Project
         uses: quarto-dev/quarto-actions/render@v2
         with: 
