@@ -64,7 +64,7 @@ display(Markdown(f"**{name} ({symbol})**\n\n**${price}**\n\n{details}"))
 :::
 
 ::: {.g-col-4}
-![](./images/adidas.jpeg)
+![](./images/adidas1.avif)
 :::
 
 ```{python}
@@ -81,7 +81,7 @@ display(Markdown(f"**{name} ({symbol})**\n\n**${price}**\n\n{details}"))
 :::
 
 ::: {.g-col-4}
-![](./images/adidas.jpeg)
+![](./images/birks1.webp)
 :::
 
 ```{python}
@@ -98,7 +98,7 @@ display(Markdown(f"**{name} ({symbol})**\n\n**${price}**\n\n{details}"))
 :::
 
 ::: {.g-col-4}
-![](./images/adidas.jpeg)
+![](./images/docs1.png)
 :::
 
 ```{python}
@@ -115,7 +115,7 @@ display(Markdown(f"**{name} ({symbol})**\n\n**${price}**\n\n{details}"))
 :::
 
 ::: {.g-col-4}
-![](./images/adidas.jpeg)
+![](./images/logi1.jpg)
 :::
 
 ```{python}
@@ -132,7 +132,7 @@ display(Markdown(f"**{name} ({symbol})**\n\n**${price}**\n\n{details}"))
 :::
 
 ::: {.g-col-4}
-![](./images/adidas.jpeg)
+![](./images/loreal1.webp)
 :::
 
 ```{python}
@@ -149,7 +149,7 @@ display(Markdown(f"**{name} ({symbol})**\n\n**${price}**\n\n{details}"))
 :::
 
 ::: {.g-col-4}
-![](./images/adidas.jpeg)
+![](./images/nintendo1.jpeg)
 :::
 
 ```{python}
@@ -166,7 +166,7 @@ display(Markdown(f"**{name} ({symbol})**\n\n**${price}**\n\n{details}"))
 :::
 
 ::: {.g-col-4}
-![](./images/adidas.jpeg)
+![](./images/samsung1.webp)
 :::
 
 ```{python}
@@ -183,7 +183,7 @@ display(Markdown(f"**{name} ({symbol})**\n\n**${price}**\n\n{details}"))
 :::
 
 ::: {.g-col-4}
-![](./images/adidas.jpeg)
+![](./images/shiseido1.webp)
 :::
 
 ```{python}
@@ -200,7 +200,7 @@ display(Markdown(f"**{name} ({symbol})**\n\n**${price}**\n\n{details}"))
 :::
 
 ::: {.g-col-4}
-![](./images/adidas.jpeg)
+![](./images/toyota1.jpeg)
 :::
 
 ```{python}
