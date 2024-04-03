@@ -2,18 +2,10 @@ name: Update Quarto Project
 
 on: 
   schedule:
-    - cron: '20 7 * * *'
-    - cron: '0 14 * * *'
-    - cron: '0 15 * * *'
-    - cron: '0 16 * * *'
-    - cron: '0 17 * * *'
-    - cron: '0 18 * * *'
-    - cron: '0 19 * * *'
-    - cron: '0 20 * * *'
-    - cron: '0 21 * * *'
+    - cron: "*/5 * * * *"
 
 jobs:
-  update:
+  cron:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
