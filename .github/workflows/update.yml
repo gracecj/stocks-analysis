@@ -33,4 +33,4 @@ jobs:
           git config --local user.name "GitHub Action"
           git add .
           git commit -m "Stocks Update"
-          git push
+          git push https://$PAT_TOKEN@github.com/gracecj/stocks-analysis.git
