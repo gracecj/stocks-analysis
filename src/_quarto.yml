@@ -8,4 +8,5 @@ website:
 format:
   html:
     theme: morph
+    page-layout: full
     
