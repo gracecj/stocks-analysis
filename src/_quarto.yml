@@ -2,6 +2,9 @@ project:
   type: website
   output-dir: ../docs
 
+website:
+  favicon: money-bill-trend-up-solid.svg
+
 format:
   html:
     theme: morph
