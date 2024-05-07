@@ -2,7 +2,7 @@ name: Update Quarto Project
 
 on: 
   schedule:
-    - cron: "*/30 * * * *"
+    - cron: 
 
 jobs:
   cron:
